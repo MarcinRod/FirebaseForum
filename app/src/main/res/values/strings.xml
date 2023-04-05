@@ -2,4 +2,9 @@
     <string name="app_name">FirebaseForum</string>
     <string name="title_home">Home</string>
     <string name="title_forums">Forums</string>
+    <string name="login_str">Login</string>
+    <string name="register_str">Register</string>
+    <string name="password_hint">Password (confirm)</string>
+    <string name="password_label">Password</string>
+    <string name="e_mail_label">E-mail</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_login">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -16,4 +16,15 @@
         android:name="com.example.firebaseforum.ui.forums.ForumsFragment"
         android:label="@string/title_forums"
         tools:layout="@layout/fragment_forums" />
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.firebaseforum.ui.login.LoginRegisterFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim" />
+    </fragment>
 </navigation>
