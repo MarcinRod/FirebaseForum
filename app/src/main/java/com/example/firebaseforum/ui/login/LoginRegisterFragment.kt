@@ -26,9 +26,6 @@ class LoginRegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.loginRegisterButton.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_login_to_navigation_home)
-        }
     }
 
     override fun onStart() {
