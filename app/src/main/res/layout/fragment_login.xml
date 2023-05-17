@@ -123,13 +123,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@color/primary"
-        android:textColor="@color/white"
+        android:enabled="false"
         android:text="@string/login_str"
-        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/login_password"
         app:layout_constraintStart_toStartOf="@+id/login_password"
-       />
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <Button
         android:id="@+id/login_register_toggle"

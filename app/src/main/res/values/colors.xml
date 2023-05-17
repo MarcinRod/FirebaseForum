@@ -12,5 +12,7 @@
     <color name="primary_variant">#ff8e00</color>
     <color name="secondary">#7287ff</color>
     <color name="secondary_variant">#294ef1</color>
+
     <color name="primary_variant_light">#ffecb3</color>
+    <color name="grey">#C7C7C7</color>
 </resources>

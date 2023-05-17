@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <View
-            android:id="@+id/labelBackground2"
+            android:id="@+id/decoration"
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_marginStart="6dp"
@@ -21,10 +21,10 @@
             android:background="@color/primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/forumPostAuthor" />
+            app:layout_constraintTop_toBottomOf="@+id/home_item_label" />
 
         <TextView
-            android:id="@+id/forumPostAuthor"
+            android:id="@+id/home_item_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -47,9 +47,9 @@
             android:text="TextView"
             android:textSize="12sp"
             android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@+id/forumPostAuthor"
+            app:layout_constraintBottom_toBottomOf="@+id/home_item_label"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/forumPostAuthor"
+            app:layout_constraintTop_toTopOf="@+id/home_item_label"
             tools:text="23.03.2023 17:51" />
 
         <TextView
@@ -62,8 +62,8 @@
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/date"
-            app:layout_constraintStart_toStartOf="@+id/forumPostAuthor"
-            app:layout_constraintTop_toBottomOf="@+id/forumPostAuthor"
+            app:layout_constraintStart_toStartOf="@+id/home_item_label"
+            app:layout_constraintTop_toBottomOf="@+id/home_item_label"
             tools:text="Moja wiadomość\n dwu liniowa" />
 
 

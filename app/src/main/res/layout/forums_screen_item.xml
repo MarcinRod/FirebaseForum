@@ -12,17 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="120dp">
 
-     <!--   <View
-            android:id="@+id/labelBackground"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@color/myPrimary"
-            app:layout_constraintBottom_toBottomOf="@+id/forumLabel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />-->
+        <!--   <View
+               android:id="@+id/labelBackground"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:background="@color/myPrimary"
+               app:layout_constraintBottom_toBottomOf="@+id/forumLabel"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />-->
         <View
-            android:id="@+id/labelBackground2"
+            android:id="@+id/decoration"
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_marginStart="6dp"
@@ -31,22 +31,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/forumLabel" />
+
         <TextView
             android:id="@+id/forumLabel"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
+
             android:paddingBottom="8dp"
             android:text="TextView"
 
             android:textSize="16sp"
             android:textStyle="bold|italic"
-            app:layout_constraintEnd_toStartOf="@+id/favButton"
+            app:layout_constraintEnd_toStartOf="@+id/lock"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Main Forum" />
+
+        <TextView
+            android:id="@+id/forumOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="TextView"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/forumLabel"
+            app:layout_constraintStart_toStartOf="@+id/forumLabel"
+            tools:text="by joe" />
 
         <TextView
             android:id="@+id/forumDate"
@@ -60,32 +73,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/postAuthor"
             tools:text="23.03.2023 17:51" />
-
+        <TextView
+            android:id="@+id/lastMessageLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Last message:"
+            app:layout_constraintEnd_toEndOf="@+id/forumDate"
+            app:layout_constraintStart_toStartOf="@+id/forumLabel"
+            app:layout_constraintTop_toBottomOf="@+id/forumLabel"/>
         <TextView
             android:id="@+id/postAuthor"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:layout_marginBottom="8dp"
             android:text="TextView"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/forumDate"
             app:layout_constraintStart_toStartOf="@+id/forumLabel"
-            app:layout_constraintTop_toBottomOf="@+id/forumLabel"
+            app:layout_constraintTop_toBottomOf="@+id/lastMessageLabel"
             tools:text="John" />
 
-        <ImageButton
-            android:id="@+id/favButton"
-            android:layout_width="48dp"
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:background="@android:color/transparent"
-            app:tint="@color/secondary"
+            android:layout_marginEnd="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/forumLabel"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/forumLabel"
-            app:srcCompat="@drawable/ic_favorite_border" />
+            app:srcCompat="@drawable/ic_lock_open"
+            app:tint="@color/secondary" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
